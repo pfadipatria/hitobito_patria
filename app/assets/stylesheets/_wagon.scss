@@ -14,7 +14,7 @@
   &:active {
     color: $white;
     background: $red;
-    @include single-text-shadow($purpleDark, 0, -1px, 1px);
+    @include single-text-shadow($redDark, 0, -1px, 1px);
     border-color: $grayDarker;
 
     .icon,
@@ -30,7 +30,7 @@
   .icon,
   [class^="icon-"],
   [class*=" icon-"] {
-    background-image: image-url("glyphicons-halflings-green.png");
+    background-image: image-url("glyphicons-halflings-blue.png");
   }
 
   .caret {
@@ -41,14 +41,14 @@
 .btn-primary {
   color: $white;
   background: $red;
-  border-color: $pink;
+  border-color: $redDark;
   @include single-text-shadow($blueDark, 0, -1px, 1px);
 }
 
 .btn-group.open .btn.dropdown-toggle {
   background: $red;
   color: $white;
-  border-color: $purpleDark;
+  border-color: $redDark;
 }
 
 select,
@@ -71,8 +71,8 @@ input[type="color"],
   color: $grayDarker;
 
   &:focus {
-    border-color: $purple;
-    @include single-box-shadow(lighten($purple, 5%), 0, 0, 6px, 0, false);
+    border-color: $gray;
+    @include single-box-shadow(lighten($gray, 5%), 0, 0, 6px, 0, false);
   }
 }
 
@@ -130,11 +130,11 @@ input[type="color"],
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
   background-color: $red;
-  border-color: $purple !important;
+  border-color: $redDark !important;
 }
 .nav-pills .open .dropdown-toggle {
   background-color: $red;
-  border-color: $purple;
+  border-color: $redDark;
 }
 .toolbar-pills {
   li > a {
@@ -180,7 +180,7 @@ h2 {
 
 .table-hover tbody tr:hover > td,
 .table-hover tbody tr:hover > th {
-  background-color: lighten($purple, 50%);
+  background-color: lighten($grayLighter, 1%);
 }
 
 
@@ -214,7 +214,7 @@ body {
 // Logo
 .brand {
   display: block;
-  width: 230px;
+  width: 91px;
   height: 30px;
   padding: 10px 0;
 

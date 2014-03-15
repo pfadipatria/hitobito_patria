@@ -10,12 +10,12 @@
 
 // Grays
 // -------------------------
-$black:                 #474E5D !default;
-$grayDarker:            #797E89 !default;
+$black:                 #4E4E4E !default;
+$grayDarker:            #7E7E7E !default;
 $grayDark:              #9B9B9B !default;
-$gray:                  #979CA6 !default;
-$grayLight:             #E8EBF0 !default;
-$grayLighter:           #F8F9FA !default;
+$gray:                  #9C9C9C !default;
+$grayLight:             #EBEBEB !default;
+$grayLighter:           #F8F8F8 !default;
 $white:                 #fff !default;
 
 // Colors
@@ -44,10 +44,10 @@ $contentBackground:     $grayLight;
 $footerBackground:      $grayDarker;
 $bodyBackground:        $footerBackground !default;
 
-$focusColor:            $red;
+$focusColor:            $gray;
 $shadowColor:           darken($pageBackground, 25%);
 $linkColor:             $redDark !default;
-$linkColorHover:        $purpleDark !default;
+$linkColorHover:        $redDarker !default;
 
 // Typography
 // -------------------------
