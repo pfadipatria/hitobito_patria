@@ -2,7 +2,7 @@ Welcome to the documentation of Hitobito Patria Wagon's documentation!
 ======================================================================
 
 This is the Documentation of the hitobito_patria wagon, an extension to 
-the core hitobito reflecting the structures of the Swiss scout group “Pfadi Corps Patria”
+the core hitobito reflecting the structures of the Swiss scout group "Pfadi Corps Patria"
 
 The source can be found on github
 
