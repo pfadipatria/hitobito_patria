@@ -12,4 +12,4 @@ before_script:
   - rake db:create
   - rake db:setup:all
 script:
-  - rake
+  - bundle exec rspec
