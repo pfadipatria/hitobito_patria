@@ -4,7 +4,7 @@ rvm:
 before_install:
   - cd ..
   - git clone https://github.com/pfadipatria/hitobito.git
-  - git clone https://github.com/pfadipatria/hitobito_patria.git
+  - git clone https://github.com/pfadipatria/hitobito_pbs.git
   - cd hitobito
 install: bundle install
 before_script:
