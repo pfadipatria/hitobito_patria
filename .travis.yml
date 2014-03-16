@@ -6,11 +6,10 @@ before_install:
   - git clone https://github.com/pfadipatria/hitobito.git
   - git clone https://github.com/pfadipatria/hitobito_pbs.git
   - cd hitobito
+  - cp Wagonfile.ci Wagonfile
 install: bundle install
 before_script:
   - rake db:create
   - rake db:setup:all
 script:
   - rake
-# uncomment this line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
