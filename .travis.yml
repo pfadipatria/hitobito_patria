@@ -7,9 +7,9 @@ before_install:
   - git clone https://github.com/pfadipatria/hitobito_pbs.git
   - cd hitobito
   - cp Wagonfile.ci Wagonfile
-install: bundle install
+install: bundle
 before_script:
-  - rake db:create
-  - rake db:setup:all
+  - bundle exec rake db:create
+  - bundle exec rake db:setup:all
 script:
   - bundle exec rspec
