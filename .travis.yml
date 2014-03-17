@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+  - "1.9.3"
+before_install:
+  - cd ..
+  - git clone https://github.com/pfadipatria/hitobito.git
+  - git clone https://github.com/pfadipatria/hitobito_pbs.git
+  - cd hitobito
+  - cp Wagonfile.ci Wagonfile
+install: bundle
+before_script:
+  - bundle exec rake db:create
+  - bundle exec rake db:setup:all
+script:
+  - bundle exec rspec
