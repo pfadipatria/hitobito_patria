@@ -1,7 +1,7 @@
 module Patria::MemberCounter
   extend ActiveSupport::Concern
   included do
-      alias_method_chain :count, :age_group
+    alias_method_chain :count, :age_group
   end
 
   def count_with_age_group
