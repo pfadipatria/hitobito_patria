@@ -13,7 +13,9 @@ module HitobitoPatria
 
     config.to_prepare do
       # extend application classes here
-	  MemberCounter.send        :include, Patria::MemberCounter
+      MemberCount.send          :include, Patria::MemberCount
+      
+      MemberCounter.send        :include, Patria::MemberCounter
     end 
 
   end
