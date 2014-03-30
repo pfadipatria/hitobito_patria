@@ -4,7 +4,7 @@
 #
 #  id                 :integer          not null, primary key
 #  member_count_id    :integer          not null, foreign key
-#  age_group          :integer          not null
+#  birth_year         :integer          not null
 #  males              :integer
 #  females            :integer
 #
