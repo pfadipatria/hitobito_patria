@@ -15,4 +15,4 @@ Goal of the age group stats is to evaluate for an "Abteilung" how many many memb
 
 **Interesting Links**
 
-- [Explanation of extending methods of other classes](www.ruby-forum.com/topic/128131)
+- [Explanation of extending methods of other classes](https://www.ruby-forum.com/topic/128131)
