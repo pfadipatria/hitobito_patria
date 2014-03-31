@@ -11,5 +11,6 @@ install: bundle
 before_script:
   - bundle exec rake db:create
   - bundle exec rake db:setup:all
+  - bundle exec rake db:test:prepare
 script:
   - bundle exec rspec
