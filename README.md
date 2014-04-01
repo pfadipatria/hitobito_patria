@@ -1,6 +1,6 @@
 <a href='https://gemnasium.com/pfadipatria/hitobito_patria'><img src="https://gemnasium.com/pfadipatria/hitobito_patria.svg" alt="Dependency Status" /></a>
 
-﻿#Hitobito Patria
+#Hitobito Patria
 Hitobito Patria is an Extension for the core hitobito and the hitobito_pbs wagon, reflecting the structures of the swiss scout group "Pfadicorps Patria Bern", as well as some further functionalities.
 
 ##New Features and Functionalities
