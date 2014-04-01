@@ -14,20 +14,26 @@ module Patria::MemberCounter
   def count_age_groups(count, people)
     age_groups = Hash.new
     people.each do |person|
-      year = person.birthday.year
-      age_groups[year] ||= AgeGroupCount.new
-      age_group = age_groups[year]
-      age_group.birth_year = year
-      if person.male?
-        age_group.males = age_group.males ? age_group.males + 1 : 1
-      else
-        age_group.females = age_group.females ? age_group.females + 1 : 1
-      end
+	  increment(age_group(age_groups, person), count_field_without_role(person))
     end
     
     age_groups.each do |key, value|
       count.age_group_counts << value
     end
+  end
+  
+  private
+  
+  def age_group(counts, person)
+	year = person.birthday.year
+	counts[year] ||= AgeGroupCount.new
+    age_group = counts[year]
+    age_group.birth_year = year
+	age_group
+  end
+  
+  def count_field_without_role(person)
+	return person.male? ? :"count_m" : :"count_f"
   end
   
 end
