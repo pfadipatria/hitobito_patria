@@ -8,11 +8,13 @@ module Patria::Person
   end
   
   def get_ldap_first_name
-    self.first_name = Devise::LDAP::Adapter.get_ldap_param(self.nickname,"givenName").first
+    firstname = Devise::LDAP::Adapter.get_ldap_param(self.nickname,"givenName")
+    self.first_name = firstname.first unless firstname == nil;
   end
    
   def get_ldap_last_name
-    self.last_name = Devise::LDAP::Adapter.get_ldap_param(self.nickname,"sn").first
+    lastname = Devise::LDAP::Adapter.get_ldap_param(self.nickname,"sn")
+    self.last_name = lastname.first unless lastname == nil;
   end
 
 end
