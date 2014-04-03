@@ -9,13 +9,16 @@ module HitobitoPatria
     # config.autoload_paths += %W( #{config.root}/lib )
 	
 	config.autoload_paths += %W( #{config.root}/app/domain
+
 						   )
 
     config.to_prepare do
       # extend application classes here
-      MemberCount.send          :include, Patria::MemberCount
-      
-      MemberCounter.send        :include, Patria::MemberCounter
+      MemberCount.send           :include, Patria::MemberCount
+      MemberCounter.send         :include, Patria::MemberCounter
+
+      Person.send                 :include, Patria::Person
+      ApplicationController.send  :include, Patria::ApplicationController
     end 
 
   end
