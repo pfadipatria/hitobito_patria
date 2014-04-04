@@ -4,6 +4,8 @@ Devise.setup do |config|
 
   config.ldap_create_user = true
 
+  config.ldap_update_password = true
+
   config.ldap_use_admin_to_bind = true
 
   #route to the wagons' ldap-config file
@@ -43,7 +45,7 @@ Devise.setup do |config|
   # Configure which authentication keys should be case-insensitive.
   # These keys will be downcased upon creating or modifying a user and when used
   # to authenticate or find a user. Default is :email.
-  config.case_insensitive_keys = [ :nickname ]
+  #config.case_insensitive_keys = [ :nickname ]
 
   # Configure which authentication keys should have whitespace stripped.
   # These keys will have whitespace before and after removed upon creating or
