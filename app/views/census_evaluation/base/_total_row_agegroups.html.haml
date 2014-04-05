@@ -8,5 +8,5 @@
   - @max_birth_year.downto(@min_birth_year) do |year|
     %th.right= age_total_count_field(year, "f")
     %th.right= age_total_count_field(year, "m")
-  %th.right= count_value(@total.total)
+  %th.right= count_value(@total.total_from_age_groups)
   %th

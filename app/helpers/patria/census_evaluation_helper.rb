@@ -7,7 +7,11 @@ module Patria::CensusEvaluationHelper
   def age_count_field(group, birth_year, gender)
     if (count = @group_counts[group.id])
       age_group = count.age_group_counts.select { |age_group_count| age_group_count.birth_year == birth_year }.first
-      count_value(age_group.send("count_#{gender}"))
+      if age_group
+        count_value(age_group.send("count_#{gender}"))
+      else 
+        EMPTY_COUNT_VALUE
+      end
     else
       EMPTY_COUNT_VALUE
     end
