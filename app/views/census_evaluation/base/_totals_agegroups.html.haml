@@ -7,11 +7,11 @@
          locals: { before_columns: [''], after_columns: [t('census_evaluation.total'), '']} do
   - @sub_groups.each do |g|
     %tr
-      %td= link_to(g.to_s, census_evaluation_path(g, year: @year, name: "Nach Jahrgang"))
+      %td= link_to(g.to_s, census_evaluation_path(g, year: @year, name: FilterNavigation::MemberCounts::FILTER_NAMES.second))
       - @max_birth_year.downto(@min_birth_year) do |year|
-        %td.right= age_count_field(g, year, "f")
-        %td.right= age_count_field(g, year, "m")
-      -if @group_counts[g.id]
-        %td.right= count_value(@group_counts[g.id].total_from_age_groups)
+        %td.right= age_count_field(@group_counts[g.id], year, "f")
+        %td.right= age_count_field(@group_counts[g.id], year, "m")
+        
+      %td.right= count_value_group_total(g)
       %td.right= render 'total_actions', group: g
   = render 'total_row_agegroups'

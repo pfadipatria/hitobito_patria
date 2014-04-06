@@ -6,7 +6,7 @@
 %tr
   %th.right= t('census_evaluation.total')    
   - @max_birth_year.downto(@min_birth_year) do |year|
-    %th.right= age_total_count_field(year, "f")
-    %th.right= age_total_count_field(year, "m")
+    %th.right= age_count_field(@total, year, "f")
+    %th.right= age_count_field(@total, year, "m")
   %th.right= count_value(@total.total_from_age_groups)
   %th

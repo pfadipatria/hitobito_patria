@@ -6,7 +6,7 @@ module Patria::CensusEvaluation::BaseController
   end
 
   def index_with_filter
-    if params[:name] == "Nach Jahrgang"
+    if FilterNavigation::MemberCounts.shows_agegroups?(params[:name])
       @sub_groups = evaluation.sub_groups
       @group_counts = evaluation.age_counts_by_sub_group
       @min_birth_year = evaluation.min_birth_year

@@ -15,7 +15,7 @@
 #main.row-fluid
   -if @total
     %article.span8
-    -if params[:name] == "Nach Jahrgang"
+    -if FilterNavigation::MemberCounts.shows_agegroups?(params[:name])
       = render 'totals_agegroups'
     -else
       = render 'totals'
