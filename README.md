@@ -9,12 +9,28 @@ Please document what you did (and why) to accomplish a feature
 ###Age Group Statistics (Jahrgangsstatistik)
 Goal of the age group stats is to evaluate for an "Abteilung" how many many members of a given age group it has. For this the statistics of the PBS-wagon can be extended. When a new data set is being calculated the age group statistics should be counted as well and then stored to the database.
 
+**Basic Idea of Implementation**
+
+- Age groups are being calculated and stored as relational data when a new census is being created
+- Switching to the new age group stats is done via an additional url-paramenter
+- The census is then being evaluated and displayed accordingly to the mode
+
 **Changes**
 
-- `AgeGroup` model saves the count of female and male members of an "Abteilung" and an age group
+- `AgeGroupCount` model saves the count of female and male members of an "Abteilung" and an age group
 - module `Patria::MemberCounter` to extend the method `count` of `MemberCounter` to calculate the members of an age group
 - module `Patria::MemberCount` to extend `MemberCount` model with `has_many AgeGroups` relations
+- Separate view hierarchy (at ../views/census_evalutation/base and ../views/census_evalutation/abteilung)
+- module `Patria::CensusEvaluation::BaseController` extending `index` with switch over new url-parameters
+- module `FilterNavigation` for the drop-down menu
+- modules `Patria::Group::Abteilung`, `Patria::Group::Kantonalverband` and `Patria::Group::Bund` to support the evalutation of the age group counts on different levels (and some other helpers and modules, i.e. `Patria::CensusEvaluation`, `Patria::CensusEvaluationHelper`, `TotalFromAgeGroups`, `AgeGroupSum`)
 
-**Interesting Links**
+**Interesting Links Gathered on the Way**
 
 - [Explanation of extending methods of other classes](https://www.ruby-forum.com/topic/128131)
+
+###Login via LDAP
+
+###New Corps-Layer
+
+###Address Autocomplete via Service 
