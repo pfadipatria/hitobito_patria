@@ -4,7 +4,7 @@ module Patria::MemberCount
   include TotalFromAgeGroups
   
   included do
-    has_many :age_group_counts
+    has_many :age_group_counts, :dependent => :delete_all
   end
 
   module ClassMethods
