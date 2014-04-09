@@ -12,8 +12,10 @@ module Patria::CensusEvaluation::BaseController
       @min_birth_year = evaluation.min_birth_year
       @max_birth_year = evaluation.max_birth_year
       @total = evaluation.age_total
+	  @totals_partial = 'totals_agegroups'
     else
       index_without_filter
+	  @totals_partial = 'totals'
     end
 
   end

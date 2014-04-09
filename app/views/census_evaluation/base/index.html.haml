@@ -15,9 +15,6 @@
 #main.row-fluid
   -if @total
     %article.span8
-    -if FilterNavigation::MemberCounts.shows_agegroups?(params[:name])
-      = render 'totals_agegroups'
-    -else
-      = render 'totals'
+    = render @totals_partial
   -else
     %p= t('.no_data_for_this_year')
