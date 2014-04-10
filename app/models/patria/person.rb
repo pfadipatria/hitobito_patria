@@ -17,4 +17,8 @@ module Patria::Person
     self.last_name = lastname.first unless lastname == nil;
   end
 
+  def ldap_user?
+    !(Devise::LDAP::Adapter.get_ldap_param(self.nickname,"uid") == nil)
+  end
+
 end

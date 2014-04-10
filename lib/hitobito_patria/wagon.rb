@@ -25,6 +25,7 @@ module HitobitoPatria
 
       Person.send                 :include, Patria::Person
       ApplicationController.send  :include, Patria::ApplicationController
+      Devise::RegistrationsController.send :include, Patria::Devise::RegistrationsController
     end 
 
   end

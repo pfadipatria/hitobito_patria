@@ -1,0 +1,2 @@
+# This is where the button 'change password' leads to, if logged in as a ldap-user
+ldap_edit_password: http://www.pfadipatria.com
