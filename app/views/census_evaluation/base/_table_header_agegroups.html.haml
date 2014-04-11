@@ -13,6 +13,7 @@
       %tr
         - before_columns.each do |c|
           %th
+          %th.center{colspan: 2}= 'N/V' 
         - @max_birth_year.downto(@min_birth_year) do |i|
           %th.center{colspan: 2}= i
         - after_columns.each do |c|
@@ -20,7 +21,7 @@
       %tr
         - before_columns.each do |c|
           %th= c
-        - (@max_birth_year - @min_birth_year + 1).times do
+        - (@max_birth_year - @min_birth_year + 2).times do
           %th.right= t('global.gender.female_short')
           %th.right= t('global.gender.male_short')
         - after_columns.each do |c|

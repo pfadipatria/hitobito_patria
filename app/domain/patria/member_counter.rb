@@ -25,7 +25,9 @@ module Patria::MemberCounter
   private
   
   def age_group(counts, person)
-    year = person.birthday.year
+    if year = person.birthday
+      year = year.year
+    end
     counts[year] ||= AgeGroupCount.new
     age_group = counts[year]
     age_group.birth_year = year

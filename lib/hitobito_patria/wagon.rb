@@ -19,6 +19,7 @@ module HitobitoPatria
       CensusEvaluation.send      :include, Patria::CensusEvaluation
       CensusEvaluation::BaseController.send  :include, Patria::CensusEvaluation::BaseController
       CensusEvaluationHelper.send :include, Patria::CensusEvaluationHelper
+      Group.send                 :include, Patria::Group
       Group::Abteilung.send      :include, Patria::Group::Abteilung
       Group::Kantonalverband.send :include, Patria::Group::Kantonalverband
       Group::Bund.send           :include, Patria::Group::Bund

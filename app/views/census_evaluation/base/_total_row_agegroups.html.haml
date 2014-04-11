@@ -4,7 +4,9 @@
 -#  https://github.com/hitobito/hitobito_pbs.
 
 %tr
-  %th.right= t('census_evaluation.total')    
+  %th.right= t('census_evaluation.total') 
+  %th.right= age_count_field(@total, nil, "f")
+  %th.right= age_count_field(@total, nil, "m")  
   - @max_birth_year.downto(@min_birth_year) do |year|
     %th.right= age_count_field(@total, year, "f")
     %th.right= age_count_field(@total, year, "m")
