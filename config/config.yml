@@ -2,4 +2,4 @@
 ldap_edit_password: http://www.pfadipatria.com
 
 # This is where you get redirected to, if you forgot your password and request a new one as an ldap-user
-ldap_new_password: http://www.hitobito.ch
+ldap_new_password: http://www.google.ch
