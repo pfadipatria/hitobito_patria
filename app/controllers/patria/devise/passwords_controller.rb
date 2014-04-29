@@ -4,10 +4,10 @@ module Patria::Devise::PasswordsController
   included do
    
     def create
-      self.resource = resource_class.send_reset_password_instructions(resource_params)
       user = Person.where("email = ?", params["person"]["email"]).first
       if user.nil?
-        respond_with(resource)
+        flash[:alert] = "E-Mail wurde noch nicht im Hitobito eingetragen, falls Sie einen Account im LDAP besitzen, melden Sie sich mit diesem auf der Startseite an."
+        redirect_to(:back)
       else 
         if user.ldap_user?
           config = YAML.load_file("#{Rails.root.parent}/hitobito_patria/config/config.yml")
