@@ -5,20 +5,27 @@ module Patria::Devise::PasswordsController
    
     def create
       user = Person.where("email = ?", params["person"]["email"]).first
+      config = YAML.load_file("#{Rails.root.parent}/hitobito_patria/config/config.yml")
+      
       if user.nil?
-        flash[:alert] = "E-Mail wurde noch nicht im Hitobito eingetragen, falls Sie einen Account im LDAP besitzen, melden Sie sich mit diesem auf der Startseite an."
+        flash[:alert] = config['no_hitobito_user']
         redirect_to(:back)
       else 
         if user.ldap_user?
-          config = YAML.load_file("#{Rails.root.parent}/hitobito_patria/config/config.yml")
-          redirect_to(config['ldap_new_password'])
+        
+          if config['use_text']
+            flash[:alert] = config['call_administrator']
+            redirect_to(:back)
+          else
+            redirect_to(config['ldap_new_password'])
+          end
+          
         else 
-          flash[:alert] = "E-Mail nicht im LDAP"
+          flash[:alert] = config['no_ldap_user']
           redirect_to(:back)
         end
       end
-       
     end
   end
-   
+  
 end
