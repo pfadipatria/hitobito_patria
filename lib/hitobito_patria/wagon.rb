@@ -9,8 +9,7 @@ module HitobitoPatria
     # config.autoload_paths += %W( #{config.root}/lib )
 
     config.autoload_paths += %W( #{config.root}/app/domain
-
-                           )
+                                 )
 
     config.to_prepare do
       # extend application classes here
@@ -19,7 +18,6 @@ module HitobitoPatria
       CensusEvaluation.send      :include, Patria::CensusEvaluation
       CensusEvaluation::BaseController.send  :include, Patria::CensusEvaluation::BaseController
       CensusEvaluationHelper.send :include, Patria::CensusEvaluationHelper
-      Group.send                 :include, Patria::Group
       Group::Abteilung.send      :include, Patria::Group::Abteilung
       Group::Kantonalverband.send :include, Patria::Group::Kantonalverband
       Group::Bund.send           :include, Patria::Group::Bund
@@ -27,7 +25,14 @@ module HitobitoPatria
       Person.send                 :include, Patria::Person
       ApplicationController.send  :include, Patria::ApplicationController
       Devise::RegistrationsController.send :include, Patria::Devise::RegistrationsController
+      
+      #Adds Neumitglied to the Folowing Groups
+      #      Group.send                 :include, Patria::Group ;does not work;
+      Group::Biber.send                  :include, Patria::Group
+      Group::Woelfe.send                  :include, Patria::Group
+      Group::Pfadi.send                  :include, Patria::Group
+      Group::Pio.send                  :include, Patria::Group
+      Group::Pta.send                  :include, Patria::Group
     end 
-
   end
 end

@@ -1,0 +1,731 @@
+#  Copyright (c) 2012-2014, Pfadibewegung Schweiz. This file is part of
+#  hitobito_pbs and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_pbs.
+
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+
+de:
+  activerecord:
+    models:
+      patria/group/neumitglied:
+        one: Neumitglied
+        description:
+      group/corps:
+        one: Corps
+        other: Corps 
+      group/abteilung:
+        one: Abteilung
+        other: Abteilungen
+      group/abteilungs_gremium:
+        one: Gremium
+        other: Gremien
+        long: Abteilungsgremium
+      group/abteilungs_rover:
+        one: Rover
+        other: Rovers
+        long: Rover Abteilung
+      group/biber:
+        one: Biber
+        other: Biber
+      group/bund: Bund
+      group/bundes_gremium:
+        one: Gremium
+        other: Gremien
+        long: Bundesgremium
+      group/elternrat:
+        one: Elternrat
+        other: Elternräte
+      group/gremium:
+        one: Gremium
+        other: Gremien
+      group/kantonalverband:
+        one: Kantonalverband
+        other: Kantonalverbände
+      group/kantonales_gremium:
+        one: Gremium
+        other: Gremien
+        long: Kantonales Gremium
+      group/pfadi:
+        one: Pfadi
+        other: Pfadis
+      group/pio:
+        one: Pio
+        other: Pios
+      group/pta:
+        one: PTA
+        other: PTAs
+      group/region:
+        one: Region
+        other: Regionen
+      group/regionales_gremium:
+        one: Gremium
+        other: Gremien
+        long: Regionales Gremium
+      group/regionale_rover:
+        one: Rover
+        other: Rovers
+        long: Regionale Rover
+      group/rover:
+        one: Rover
+        other: Rovers
+      group/woelfe:
+        one: Wölfe
+        other: Wölfe
+
+      group/corps/corpsleitung:
+        one: Corpsleiter
+        description:
+      group/corps/corpsleitung_stv:
+        one: Corpsleiter Stv
+        description:
+      group/corps/mitglied_corpsrat:
+        one: Corpsrat
+        description:
+           
+      group/bund/mitarbeiter_gs:
+        one: Mitarbeiter GS
+        description:
+      group/bund/sekretariat:
+        one: Sekretariat
+        description:
+      group/bund/adressverwaltung:
+        one: Adressverwalter
+        description: Verwaltet die Adressen.
+      group/bund/praesidium:
+        one: Präsident
+        description:
+      group/bund/vize_praesidium:
+        one: Vize Präsident
+        description:
+      group/bund/praesidium_apv:
+        one: Präsident APV
+        description:
+      group/bund/geschaeftsleitung:
+        one: Geschäftsleiter
+        description:
+      group/bund/mitarbeiter:
+        one: Mitarbeiter
+        description:
+      group/bund/vertretung_pbs:
+        one: Vertreter PBS
+        description:
+      group/bund/beisitz:
+        one: Beisitzer
+        description:
+      group/bund/kassier:
+        one: Kassier
+        description:
+      group/bund/revisor:
+        one: Revisor
+        description:
+      group/bund/redaktor:
+        one: Redaktor
+        description:
+      group/bund/webmaster:
+        one: Webmaster
+        description:
+      group/bund/mediensprecher:
+        one: Mediensprecher
+        description:
+      group/bund/uebersetzer:
+        one: Übersetzer
+        description:
+      group/bund/mitglied_krisenteam:
+        one: Mitglied Krisenteam
+        description:
+      group/bund/coach:
+        one: Coach
+        description:
+      group/bund/grossanlass_coach:
+        one: Grossanlass Coach
+        description:
+      group/bund/leitungskursbetreuung:
+        one: Leiterkursbetreuer
+        description:
+      group/bund/leitung_kernaufgabe_ausbildung:
+        one: Leitung Kernaufgabe Ausbildung
+        description:
+      group/bund/leitung_kernaufgabe_kommunikation:
+        one: Leitung Kernaufgabe Kommunikation
+        description:
+      group/bund/leitung_kernaufgabe_programm:
+        one: Leitung Kernaufgabe Programm
+        description:
+      group/bund/leitung_kernaufgabe_support:
+        one: Leitung Kernaufgabe Support
+        description:
+      group/bund/verantwortung_biberstufe:
+        one: Verantwortlicher Biberstufe
+        description:
+      group/bund/verantwortung_wolfstufe:
+        one: Verantwortlicher Wolfstufe
+        description:
+      group/bund/verantwortung_pfadistufe:
+        one: Verantwortlicher Pfadistufe
+        description:
+      group/bund/verantwortung_piostufe:
+        one: Verantwortlicher Piostufe
+        description:
+      group/bund/verantwortung_roverstufe:
+        one: Verantwortlicher Roverstufe
+        description:
+      group/bund/verantwortung_pfadi_trotz_allem:
+        one: Verantwortlicher Pfadi Trotz Allem
+        description:
+      group/bund/verantwortung_integration:
+        one: Verantwortlicher Integration
+        description:
+      group/bund/verantwortung_lagermeldung:
+        one: Verantwortlicher Lagermeldung
+        description:
+      group/bund/verantwortung_pr:
+        one: Verantwortlicher PR
+        description:
+      group/bund/verantwortung_praevention_sexueller_ausbeutung:
+        one: Verantwortlicher Prävention sexueller Ausbeutung
+        description:
+      group/bund/international_commissioner_ic_wagggs:
+        one: International Commissioner IC WAGGGS
+        description:
+      group/bund/international_commissioner_ic_wosm:
+        one: International Commissioner IC WOSM
+        description:
+      group/bund/stv_ic_programme_wagggs:
+        one: Stv IC Programme WAGGGS
+        description:
+      group/bund/stv_ic_programme_wosm:
+        one: Stv IC Programme WOSM
+        description:
+      group/bund/spezialfunktion:
+        one: Spezialfunktion
+        description:
+      group/bund/ehrenmitglied:
+        one: Ehrenmitglied
+        description:
+      group/bund/passivmitglied:
+        one: Passivmitglied
+        description:
+      group/bund/kontaktperson:
+        one: Kontaktperson
+        description:
+
+      group/kantonalverband/kantonsleitung:
+        one: Kantonsleiter
+        description:
+      group/kantonalverband/sekretariat:
+        one: Sekretariat
+        description:
+      group/kantonalverband/adressverwaltung:
+        one: Adressverwalter
+        description:
+      group/kantonalverband/praesidium:
+        one: Präsident
+        description:
+      group/kantonalverband/vize_praesidium:
+        one: Vize Präsident
+        description:
+      group/kantonalverband/praesidium_apv:
+        one: Präsident APV
+        description:
+      group/kantonalverband/mitarbeiter:
+        one: Mitarbeiter
+        description:
+      group/kantonalverband/beisitz:
+        one: Beisitzer
+        description:
+      group/kantonalverband/kassier:
+        one: Kassier
+        description:
+      group/kantonalverband/revisor:
+        one: Revisor
+        description:
+      group/kantonalverband/redaktor:
+        one: Redaktor
+        description:
+      group/kantonalverband/webmaster:
+        one: Webmaster
+        description:
+      group/kantonalverband/mediensprecher:
+        one: Mediensprecher
+        description:
+      group/kantonalverband/uebersetzer:
+        one: Übersetzer
+        description:
+      group/kantonalverband/mitglied_krisenteam:
+        one: Mitglied Krisenteam
+        description:
+      group/kantonalverband/coach:
+        one: Coach
+        description:
+      group/kantonalverband/leitungskursbetreuung:
+        one: Leiterkursbetreuer
+        description:
+      group/kantonalverband/verantwortung_biberstufe:
+        one: Verantwortlicher Biberstufe
+        description:
+      group/kantonalverband/verantwortung_wolfstufe:
+        one: Verantwortlicher Wolfstufe
+        description:
+      group/kantonalverband/verantwortung_pfadistufe:
+        one: Verantwortlicher Pfadistufe
+        description:
+      group/kantonalverband/verantwortung_piostufe:
+        one: Verantwortlicher Piostufe
+        description:
+      group/kantonalverband/verantwortung_roverstufe:
+        one: Verantwortlicher Roverstufe
+        description:
+      group/kantonalverband/verantwortung_pfadi_trotz_allem:
+        one: Verantwortlicher Pfadi Trotz Allem
+        description:
+      group/kantonalverband/verantwortung_abteilungen:
+        one: Verantwortlicher Abteilungen
+        description:
+      group/kantonalverband/verantwortung_animation_spirituelle:
+        one: Verantwortlicher Animation Spirituelle
+        description:
+      group/kantonalverband/verantwortung_ausbildung:
+        one: Verantwortlicher Ausbildung
+        description:
+      group/kantonalverband/verantwortung_betreuung:
+        one: Verantwortlicher Betreuung
+        description:
+      group/kantonalverband/verantwortung_integration:
+        one: Verantwortlicher Integration
+        description:
+      group/kantonalverband/verantwortung_internationales:
+        one: Verantwortlicher Internationales
+        description:
+      group/kantonalverband/verantwortung_suchtpraeventionsprogramm:
+        one: Verantwortlicher kantonales Suchtpräventionsprogramm
+        description:
+      group/kantonalverband/verantwortung_kantonsarchiv:
+        one: Verantwortlicher Kantonsarchiv
+        description:
+      group/kantonalverband/verantwortung_krisenteam:
+        one: Verantwortlicher Krisenteam
+        description:
+      group/kantonalverband/verantwortung_lagermeldung:
+        one: Verantwortlicher Lagermeldung
+        description:
+      group/kantonalverband/verantwortung_lagerplaetze:
+        one: Verantwortlicher Lagerplätze
+        description:
+      group/kantonalverband/verantwortung_materialverkaufsstelle:
+        one: Verantwortlicher Materialverkaufsstelle
+        description:
+      group/kantonalverband/verantwortung_pr:
+        one: Verantwortlicher PR
+        description:
+      group/kantonalverband/verantwortung_praevention_sexueller_ausbeutung:
+        one: Verantwortlicher Prävention sexueller Ausbeutung
+        description:
+      group/kantonalverband/verantwortung_programm:
+        one: Verantwortlicher Programm
+        description:
+      group/kantonalverband/spezialfunktion:
+        one: Spezialfunktion
+        description:
+      group/kantonalverband/ehrenmitglied:
+        one: Ehrenmitglied
+        description:
+      group/kantonalverband/passivmitglied:
+        one: Passivmitglied
+        description:
+
+      group/region/regionalleitung:
+        one: Regionsleiter
+        description:
+      group/region/sekretariat:
+        one: Sekretariat
+        description:
+      group/region/adressverwaltung:
+        one: Adressverwalter
+        description:
+      group/region/praesidium:
+        one: Präsident
+        description:
+      group/region/vize_praesidium:
+        one: Vize Präsident
+        description:
+      group/region/praesidium_apv:
+        one: Präsident APV
+        description:
+      group/region/praeses:
+        one: Präses
+        description:
+      group/region/mitarbeiter:
+        one: Mitarbeiter
+        description:
+      group/region/beisitz:
+        one: Beisitzer
+        description:
+      group/region/kassier:
+        one: Kassier
+        description:
+      group/region/revisor:
+        one: Revisor
+        description:
+      group/region/redaktor:
+        one: Redaktor
+        description:
+      group/region/webmaster:
+        one: Webmaster
+        description:
+      group/region/mediensprecher:
+        one: Mediensprecher
+        description:
+      group/region/mitglied_krisenteam:
+        one: Mitglied Krisenteam
+        description:
+      group/region/coach:
+        one: Coach
+        description:
+      group/region/leitungskursbetreuung:
+        one: Leiterkursbetreuer
+        description:
+      group/region/verantwortung_biberstufe:
+        one: Verantwortlicher Biberstufe
+        description:
+      group/region/verantwortung_wolfstufe:
+        one: Verantwortlicher Wolfstufe
+        description:
+      group/region/verantwortung_pfadistufe:
+        one: Verantwortlicher Pfadistufe
+        description:
+      group/region/verantwortung_piostufe:
+        one: Verantwortlicher Piostufe
+        description:
+      group/region/verantwortung_roverstufe:
+        one: Verantwortlicher Roverstufe
+        description:
+      group/region/verantwortung_pfadi_trotz_allem:
+        one: Verantwortlicher Pfadi Trotz Allem
+        description:
+      group/region/verantwortung_abteilungen:
+        one: Verantwortlicher Abteilungen
+        description:
+      group/region/verantwortung_animation_spirituelle:
+        one: Verantwortlicher Animation Spirituelle
+        description:
+      group/region/verantwortung_ausbildung:
+        one: Verantwortlicher Ausbildung
+        description:
+      group/region/verantwortung_betreuung:
+        one: Verantwortlicher Betreuung
+        description:
+      group/region/verantwortung_integration:
+        one: Verantwortlicher Integration
+        description:
+      group/region/verantwortung_internationales:
+        one: Verantwortlicher Internationales
+        description:
+      group/region/verantwortung_suchtpraeventionsprogramm:
+        one: Verantwortlicher kantonales Suchtpräventionsprogramm
+        description:
+      group/region/verantwortung_krisenteam:
+        one: Verantwortlicher Krisenteam
+        description:
+      group/region/verantwortung_lagermeldung:
+        one: Verantwortlicher Lagermeldung
+        description:
+      group/region/verantwortung_lagerplaetze:
+        one: Verantwortlicher Lagerplätze
+        description:
+      group/region/verantwortung_materialverkaufsstelle:
+        one: Verantwortlicher Materialverkaufsstelle
+        description:
+      group/region/verantwortung_pr:
+        one: Verantwortlicher PR
+        description:
+      group/region/verantwortung_praevention_sexueller_ausbeutung:
+        one: Verantwortlicher Prävention sexueller Ausbeutung
+        description:
+      group/region/verantwortung_programm:
+        one: Verantwortlicher Programm
+        description:
+      group/region/spezialfunktion:
+        one: Spezialfunktion
+        description:
+      group/region/ehrenmitglied:
+        one: Ehrenmitglied
+        description:
+      group/region/passivmitglied:
+        one: Passivmitglied
+        description:
+
+      group/abteilung/abteilungsleitung:
+        one: Abteilungsleiter
+        description:
+      group/abteilung/abteilungsleitung_stv:
+        one: Abteilungsleiter Stv
+        description:
+      group/abteilung/sekretariat:
+        one: Sekretariat
+        description:
+      group/abteilung/adressverwaltung:
+        one: Adressverwalter
+        description:
+      group/abteilung/praesidium:
+        one: Präsident
+        description:
+      group/abteilung/vize_praesidium:
+        one: Vize Präsident
+        description:
+      group/abteilung/praesidium_apv:
+        one: Präsident APV
+        description:
+      group/abteilung/praeses:
+        one: Präses
+        description:
+      group/abteilung/beisitz:
+        one: Beisitzer
+        description:
+      group/abteilung/stufenleitung_biber:
+        one: Stufenleiter Biber
+        description:
+      group/abteilung/stufenleitung_woelfe:
+        one: Stufenleiter Wölfe
+        description:
+      group/abteilung/stufenleitung_pfadi:
+        one: Stufenleiter Pfadi
+        description:
+      group/abteilung/stufenleitung_pio:
+        one: Stufenleiter Pio
+        description:
+      group/abteilung/stufenleitung_rover:
+        one: Stufenleiter Rover
+        description:
+      group/abteilung/stufenleitung_pta:
+        one: Stufenleiter PTA
+        description:
+      group/abteilung/kassier:
+        one: Kassier
+        description:
+      group/abteilung/revisor:
+        one: Revisor
+        description:
+      group/abteilung/redaktor:
+        one: Redaktor
+        description:
+      group/abteilung/webmaster:
+        one: Webmaster
+        description:
+      group/abteilung/coach:
+        one: Coach
+        description:
+      group/abteilung/verantwortung_materialverkaufsstelle:
+        one: Verantwortlicher Materialverkaufsstelle
+        description:
+      group/abteilung/verantwortung_pfadi_trotz_allem:
+        one: Verantwortlicher Pfadi Trotz Allem
+        description:
+      group/abteilung/verantwortung_pr:
+        one: Verantwortlicher PR
+        description:
+      group/abteilung/spezialfunktion:
+        one: Spezialfunktion
+        description:
+      group/abteilung/ehrenmitglied:
+        one: Ehrenmitglied
+        description:
+      group/abteilung/passivmitglied:
+        one: Passivmitglied
+        description:
+
+      group/biber/einheitsleitung:
+        one: Einheitsleiter
+        description:
+      group/biber/mitleitung:
+        one: Mitleiter
+        description:
+      group/biber/adressverwaltung:
+        one: Adressverwalter
+        description:
+      group/biber/biber:
+        one: Biber
+        long: Biber
+
+      group/woelfe/einheitsleitung:
+        one: Einheitsleiter
+        description:
+      group/woelfe/mitleitung:
+        one: Mitleiter
+        description:
+      group/woelfe/adressverwaltung:
+        one: Adressverwalter
+        description:
+      group/woelfe/wolf:
+        one: Wolf
+        long: Wolf
+
+      group/pfadi/einheitsleitung:
+        one: Einheitsleiter
+        description:
+      group/pfadi/mitleitung:
+        one: Mitleiter
+        description:
+      group/pfadi/adressverwaltung:
+        one: Adressverwalter
+        description:
+      group/pfadi/leitpfadi:
+        one: Leitpfadi
+        long: Leitpfadi
+      group/pfadi/pfadi:
+        one: Pfadi
+        long: Pfadi
+
+      group/pio/einheitsleitung:
+        one: Einheitsleiter
+        description:
+      group/pio/mitleitung:
+        one: Mitleiter
+        description:
+      group/pio/adressverwaltung:
+        one: Adressverwalter
+        description:
+      group/pio/pio:
+        one: Pio
+        long: Pio
+
+      group/rover/einheitsleitung:
+        one: Einheitsleiter
+        description:
+      group/rover/mitleitung:
+        one: Mitleiter
+        description:
+      group/rover/adressverwaltung:
+        one: Adressverwalter
+        description:
+      group/rover/rover:
+        one: Rover
+        long: Rover
+
+      group/pta/einheitsleitung:
+        one: Einheitsleiter
+        description:
+      group/pta/mitleitung:
+        one: Mitleiter
+        description:
+      group/pta/adressverwaltung:
+        one: Adressverwalter
+        description:
+      group/pta/mitglied:
+        one: Mitglied
+        description:
+
+      group/elternrat/praesidium:
+        one: Präsident
+        description:
+      group/elternrat/mitglied:
+        one: Mitglied
+        description:
+
+      group/gremium/leitung:
+        one: Leitung
+        description:
+      group/gremium/mitglied:
+        one: Mitglied
+        description:
+
+      census:
+        one: Bestandesmeldungsperiode
+        other: Bestandesmeldungsperioden
+
+      salutation:
+        one: Anrede
+        other: Anreden
+        available:
+          lieber_pfadiname:
+            label: Liebe(r) [Pfadiname]
+            value:
+              m: Lieber %{nickname}
+              w: Liebe %{nickname}
+              other: Liebe(r) %{nickname}
+          lieber_vorname:
+            label: Liebe(r) [Vorname]
+            value:
+              m: Lieber %{first_name}
+              w: Liebe %{first_name}
+              other: Liebe(r) %{first_name}
+          lieber_titel_nachname:
+            label: Liebe(r) Frau/Herr [Titel] [Nachname]
+            value:
+              m: Lieber Herr %{title_last_name}
+              w: Liebe Frau %{title_last_name}
+              other: Liebe(r) %{title_last_name}
+          sehr_geehrter_titel_nachname:
+            label: Sehr geehrte(r) Frau/Herr [Titel] [Nachname]
+            value:
+              m: Sehr geehrter Herr %{title_last_name}
+              w: Sehr geehrte Frau %{title_last_name}
+              other: Sehr geehrte(r) %{title_last_name}
+
+    attributes:
+      person:
+        nickname: Pfadiname
+        pbs_number: PBS Personennummer
+        salutation: Anrede
+        salutation_value: Anrede
+        title: Titel
+        grade_of_school: Schulklasse
+        entry_date: Eintrittsdatum
+        leaving_date: Austrittsdatum
+        j_s_number: J+S Personennummer
+        correspondence_language: Korrspondenzsprache
+        brother_and_sisters: Geschwister
+
+      group:
+        pta: PTA
+        vkp: VKP
+        pbs_material_insurance: PBS Lagermaterial Versicherung
+        website: Webseite
+        pbs_shortname: PBS Kürzel
+        bank_account: Bank-/Postverbindung
+        description: Beschreibung
+
+      census:
+        year: Jahr
+        start_at: Ab
+        finish_at: Stichdatum
+
+      member_count:
+        leiter: Leitende
+        leiter_m: Leitende m
+        leiter_f: Leitende w
+        biber: Biber
+        biber_m: Biber m
+        biber_f: Biber w
+        woelfe: Wölfe
+        woelfe_m: Wölfe m
+        woelfe_f: Wölfe w
+        pfadis: Pfadis
+        pfadis_m: Pfadis m
+        pfadis_f: Pfadis w
+        pios: Pios
+        pios_m: Pios m
+        pios_f: Pios w
+        rover: Rover
+        rover_m: Rover m
+        rover_f: Rover w
+        pta: PTA
+        pta_m: PTA m
+        pta_f: PTA w
+
+      role:
+        dates: Daten
+        created_at: Von
+        deleted_at: Bis
+
+    errors:
+      models:
+        role:
+          attributes:
+            created_at:
+              on_or_before: muss in der Vergangenheit liegen.
+            deleted_at:
+              after: muss nach "Von" liegen.
+
