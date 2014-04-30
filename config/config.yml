@@ -9,5 +9,5 @@ use_text: true
 
 #Strings der Meldungen
 call_administrator: "Bitte wende Dich an einen Systemadministrator um dein Passwort zurück zu setzen."
-no_hitobito_user: "E-Mail wurde noch nicht im Hitobito eingetragen, falls Sie einen Account im LDAP besitzen, melden Sie sich mit diesem auf der Startseite an."
-no_ldap_user: "E-Mail nicht im LDAP"
+no_hitobito_user: "E-Mail wurde noch nicht im Hitobito eingetragen, falls Sie einen Account im LDAP-Server besitzen, melden Sie sich mit diesem auf der Startseite an."
+no_ldap_user: "E-Mail nicht im LDAP-Server vorhanden."
