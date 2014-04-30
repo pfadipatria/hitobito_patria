@@ -1,2 +1,13 @@
 # This is where the button 'change password' leads to, if logged in as a ldap-user
 ldap_edit_password: http://www.pfadipatria.com
+
+# This is where you get redirected to, if you forgot your password and request a new one as an ldap-user
+ldap_new_password: http://www.google.ch
+
+# Using Text instead of link to say that the administrator should be contacted
+use_text: true
+
+#Strings der Meldungen
+call_administrator: "Bitte wende Dich an einen Systemadministrator um dein Passwort zurück zu setzen."
+no_hitobito_user: "E-Mail wurde noch nicht im Hitobito eingetragen, falls Sie einen Account im LDAP besitzen, melden Sie sich mit diesem auf der Startseite an."
+no_ldap_user: "E-Mail nicht im LDAP"

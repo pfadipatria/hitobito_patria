@@ -25,6 +25,8 @@ module HitobitoPatria
       Person.send                 :include, Patria::Person
       ApplicationController.send  :include, Patria::ApplicationController
       Devise::RegistrationsController.send :include, Patria::Devise::RegistrationsController
+      Devise::PasswordsController.send :include, Patria::Devise::PasswordsController
+
       
       #Adds Neumitglied to the Folowing Groups
       #      Group.send                 :include, Patria::Group ;does not work;

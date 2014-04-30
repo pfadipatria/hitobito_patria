@@ -30,6 +30,7 @@ Goal of the age group stats is to evaluate for an "Abteilung" how many many memb
 - [Explanation of extending methods of other classes](https://www.ruby-forum.com/topic/128131)
 
 ###Login via LDAP
+The LDAP Feature integrates the possibility to use a external LDAP server to manage users. When a user logs in for the very first time with an active LDAP Account, a new user in hitobito will be created and username, name, prename and password will be filled in from the LDAP server. The rest of the data will then be stored only local and not on the LDAP server. To change passwords, the LDAP admin has to be contacted. 
 
 ###New Corps-Layer
 
