@@ -10,7 +10,7 @@
 de:
   activerecord:
     models:
-      patria/group/neumitglied:
-        one: Neumitglied
+      patria/group/neuling:
+        one: Neuling
         description:
       

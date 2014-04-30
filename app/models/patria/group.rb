@@ -5,10 +5,10 @@ module Patria::Group
   
    included do 
 
-    roles Neumitglied 
+    roles Neuling
   end
   
-     class Neumitglied < ::Role
+     class Neuling < ::Role
     self.permissions = []
   end
 end
