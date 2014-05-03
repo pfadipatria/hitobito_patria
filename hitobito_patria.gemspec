@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
   
   s.add_dependency "devise_ldap_authenticatable", ">=0"
-
+  s.add_dependency "hitobito_pbs", ">=0"
 
 end
