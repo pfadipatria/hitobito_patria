@@ -5,21 +5,13 @@ module Patria::Devise::PasswordsController
    
     def create
       user = Person.where("email = ?", params["person"]["email"]).first
-      config = YAML.load_file("#{Rails.root.parent}/hitobito_patria/config/config.yml")
       
       if user.nil?
         flash[:alert] = config['no_hitobito_user']
         redirect_to(:back)
       else 
         if user.ldap_user?
-        
-          if config['use_text']
-            flash[:alert] = config['call_administrator']
-            redirect_to(:back)
-          else
-            redirect_to(config['ldap_new_password'])
-          end
-          
+          redirect_ldap_user
         else 
           self.resource = resource_class.send_reset_password_instructions(resource_params)
           yield resource if block_given?
@@ -33,6 +25,18 @@ module Patria::Devise::PasswordsController
         end
       end
     end
+
+    def redirect_ldap_user
+      config = YAML.load_file("#{Rails.root.parent}/hitobito_patria/config/config.yml")
+
+      if config['use_text']
+        flash[:alert] = config['call_administrator']
+        redirect_to(:back)
+      else
+        redirect_to(config['ldap_new_password'])
+      end
+    end
+
   end
   
 end

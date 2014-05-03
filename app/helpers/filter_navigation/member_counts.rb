@@ -40,7 +40,7 @@ module FilterNavigation
     class << self
       
       def shows_agegroups?(name)
-        return name == FILTER_NAMES.second
+        name == FILTER_NAMES.second
       end
     end
     

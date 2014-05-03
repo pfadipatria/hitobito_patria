@@ -35,6 +35,6 @@ module Patria::MemberCounter
   end
   
   def count_field_without_role(person)
-    return person.male? ? :"count_m" : :"count_f"
+    person.male? ? :"count_m" : :"count_f"
   end
 end
