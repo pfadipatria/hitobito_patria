@@ -13,7 +13,12 @@ load 'wagons/wagon_tasks.rake'
 
 load 'rspec/rails/tasks/rspec.rake'
 
-require 'ci/reporter/rake/rspec' unless Rails.env == 'production'
+unless Rails.env == 'production'
+  require 'ci/reporter/rake/rspec'
+  require 'rubocop/rake_task'
+
+  Rubocop::RakeTask.new
+end
 
 HitobitoPatria::Wagon.load_tasks
 
