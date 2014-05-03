@@ -1,9 +1,9 @@
 # encoding: utf-8
 
-#  Copyright (c) 2012-2014, Pfadicorps Patria Bern. This file is part of
-#  hitobito_pbs and licensed under the Affero General Public License version 3
+#  Copyright (c) 2014, Pfadicorps Patria Bern. This file is part of
+#  hitobito_patria and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_pbs.
+#  https://github.com/pfadipatria/hitobito_patria.
 
 # Configure Rails Environment
 load File.expand_path('../../app_root.rb', __FILE__)
