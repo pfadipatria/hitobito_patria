@@ -52,13 +52,13 @@ berchtold_2002:
 chaeib_2001:
   member_count: chaeib
   birth_year: 2001
-  count_m: 1
+  count_m: 2
   count_f: 2
 
 chaeib_2002:
   member_count: chaeib
   birth_year: 2002
   count_m: 3
-  count_f: 3
+  count_f: 0
 
 
