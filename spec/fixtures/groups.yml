@@ -84,89 +84,6 @@ zh:
   country: Svizzera
   layer_group_id: <%= ActiveRecord::FixtureSet.identify(:zh) %>
 
-vd:
-  parent: bund
-  lft: 42
-  rgt: 43
-  name: Waadt
-  short_name: VD
-  type: Group::Kantonalverband
-  email: vd@scout.ch
-  address: Nordostgasse 3
-  zip_code: 2000
-  town: Lausanne
-  country: Suisse
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:vd) %>
-
-fg_security:
-  parent: be
-  lft: 3
-  rgt: 4
-  name: FG Sicherheit
-  type: Group::KantonalesGremium
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:be) %>
-
-fg_football:
-  parent: be
-  lft: 5
-  rgt: 6
-  name: FG Football
-  short_name:
-  type: Group::KantonalesGremium
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:be) %>
-
-bern:
-  parent: be
-  lft: 7
-  rgt: 30
-  name: Stadt Bern
-  short_name: NJ
-  type: Group::Region
-  email: tanja.schwarzer@example.net
-  address: Am Gierlichshof 36c
-  zip_code: 9924
-  town: Ivanstadt
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:bern) %>
-
-oberland:
-  parent: be
-  lft: 31
-  rgt: 40
-  name: Berner Oberland
-  short_name: DN
-  type: Group::Region
-  email: selma_thimm@example.com
-  address: Am Arenzberg 41c
-  zip_code: 6255
-  town: Janoburg
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:oberland) %>
-
-zuerich:
-  parent: zh
-  lft: 45
-  rgt: 50
-  name: Stadt
-  short_name: BJ
-  type: Group::Region
-  email: luka@example.org
-  address: Grunder Wiesen 57
-  zip_code: 4908
-  town: Schindzielorzstadt
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:zuerich) %>
-
-kyburg:
-  parent: oberland
-  lft: 32
-  rgt: 39
-  name: Verband Kyburg Thun
-  short_name: BJ
-  type: Group::Region
-  email: oscar_winkler@example.com
-  address: An St. Remigius 81c
-  zip_code: 1767
-  town: Colleendorf
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:kyburg) %>
-
 patria:
   parent: bern
   lft: 8
@@ -193,19 +110,6 @@ schekka:
   town: Pompscheid
   layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schekka) %>
 
-schweizerstern:
-  parent: bern
-  lft: 28
-  rgt: 29
-  name: Schweizerstern
-  short_name: RN
-  type: Group::Abteilung
-  email: diego.siener@example.com
-  address: Hemmelrather Weg 73a
-  zip_code: 1805
-  town: Neu Estelle
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schweizerstern) %>
-
 chaeib:
   parent: zuerich
   lft: 46
@@ -218,20 +122,6 @@ chaeib:
   zip_code: 5142
   town: Leilastadt
   layer_group_id: <%= ActiveRecord::FixtureSet.identify(:chaeib) %>
-
-kcbr:
-  parent: chaeib
-  lft: 47
-  rgt: 48
-  name: KCBR
-  short_name: PP
-  type: Group::Pfadi
-  email: kcbr@example.org
-  address: Im Buchenhain 24c
-  zip_code: 5142
-  town: Hohltown
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:chaeib) %>
-
 
 berchtold:
   parent: kyburg
@@ -246,92 +136,4 @@ berchtold:
   town: Reiberland
   layer_group_id: <%= ActiveRecord::FixtureSet.identify(:berchtold) %>
 
-sunnewirbu:
-  parent: schekka
-  lft: 11
-  rgt: 12
-  name: Sunnewirbu
-  short_name:
-  type: Group::Woelfe
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schekka) %>
 
-aries:
-  parent: berchtold
-  lft: 34
-  rgt: 35
-  name: Aries
-  short_name:
-  type: Group::Woelfe
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:berchtold) %>
-
-pegasus:
-  parent: schekka
-  lft: 13
-  rgt: 18
-  name: Pegasus
-  short_name:
-  type: Group::Pfadi
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schekka) %>
-
-baereried:
-  parent: schekka
-  lft: 19
-  rgt: 20
-  name: Bäreried
-  short_name:
-  type: Group::Pfadi
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schekka) %>
-
-schloss:
-  parent: berchtold
-  lft: 36
-  rgt: 37
-  name: Schloss
-  short_name:
-  type: Group::Pfadi
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:berchtold) %>
-
-poseidon:
-  parent: pegasus
-  lft: 14
-  rgt: 15
-  name: Poseidon
-  short_name:
-  type: Group::Pfadi
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schekka) %>
-
-medusa:
-  parent: pegasus
-  lft: 16
-  rgt: 17
-  name: Medusa
-  short_name:
-  type: Group::Pfadi
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schekka) %>
-
-rovers:
-  parent: schekka
-  lft: 21
-  rgt: 22
-  name: Rovers
-  short_name:
-  type: Group::AbteilungsRover
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schekka) %>
-
-elternrat:
-  parent: schekka
-  lft: 23
-  rgt: 24
-  name: Elternrat
-  short_name:
-  type: Group::Elternrat
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schekka) %>
-
-fussballers:
-  parent: schekka
-  lft: 25
-  rgt: 26
-  name: Fussballers
-  short_name:
-  type: Group::AbteilungsGremium
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:schekka) %>
