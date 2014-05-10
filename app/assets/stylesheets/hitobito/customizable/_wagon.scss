@@ -132,10 +132,13 @@ input[type="color"],
   background-color: $red;
   border-color: $redDark !important;
 }
-.nav-pills .open .dropdown-toggle {
+
+.nav-pills .open .dropdown-toggle,
+.nav.nav-pills > li.dropdown.open.active > .dropdown-toggle {
   background-color: $red;
   border-color: $redDark;
 }
+
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
