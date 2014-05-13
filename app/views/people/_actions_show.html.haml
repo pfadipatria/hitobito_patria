@@ -16,11 +16,8 @@
                   method: :post)
 
 - if entry == current_user
-  - if entry.ldap_user?
-    = action_button t('devise.registrations.edit.change_password'), edit_person_registration_ldap_path  
+  - if entry.encrypted_password?
+    = action_button t('devise.registrations.edit.change_password'), edit_person_registration_path
   - else
-    - if entry.encrypted_password?
-      = action_button t('devise.registrations.edit.change_password'), edit_person_registration_path
-    - else
-      = action_button t('devise.registrations.edit.set_password'), edit_person_registration_path
+    = action_button t('devise.registrations.edit.set_password'), edit_person_registration_path
 
