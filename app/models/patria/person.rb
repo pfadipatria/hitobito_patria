@@ -10,11 +10,13 @@ module Patria::Person
   def get_ldap_first_name
     firstname = Devise::LDAP::Adapter.get_ldap_param(self.nickname,"givenName")
     self.first_name = firstname.first unless firstname == nil;
+  rescue Net::LDAP::LdapError
   end
    
   def get_ldap_last_name
     lastname = Devise::LDAP::Adapter.get_ldap_param(self.nickname,"sn")
     self.last_name = lastname.first unless lastname == nil;
+  rescue Net::LDAP::LdapError
   end
 
   def ldap_user?

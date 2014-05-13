@@ -10,6 +10,7 @@ module Patria::Devise::PasswordsController
       if user.nil?
         redirect_to :back, :alert => config['no_hitobito_user']
       else 
+        flash[:alert] = nil
         if user.ldap_user?
           redirect_ldap_user
         else 

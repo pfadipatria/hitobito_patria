@@ -9,7 +9,8 @@ module Patria::Devise::RegistrationsController
         render :edit
       end
     rescue Net::LDAP::LdapError
-      current_user.sign_out
+      sign_out current_user
+      redirect_to :controller => 'sessions', :action => 'new'
     end
     	
   end
