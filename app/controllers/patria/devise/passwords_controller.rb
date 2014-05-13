@@ -4,11 +4,11 @@ module Patria::Devise::PasswordsController
   included do
    
     def create
+      config = YAML.load_file("#{Rails.root.parent}/hitobito_patria/config/config.yml")
       user = Person.where("email = ?", params["person"]["email"]).first
       
       if user.nil?
-        flash[:alert] = config['no_hitobito_user']
-        redirect_to(:back)
+        redirect_to :back, :alert => config['no_hitobito_user']
       else 
         if user.ldap_user?
           redirect_ldap_user
@@ -21,17 +21,17 @@ module Patria::Devise::PasswordsController
           else
             respond_with(resource)
           end
-
         end
       end
+      
+      rescue Net::LDAP::LdapError
+        redirect_to :back, :alert => config['no_ldap_no_password_change']
+        
     end
 
-    def redirect_ldap_user
-      config = YAML.load_file("#{Rails.root.parent}/hitobito_patria/config/config.yml")
-
+    def redirect_ldap_user      
       if config['use_text']
-        flash[:alert] = config['call_administrator']
-        redirect_to(:back)
+        redirect_to :back, :alert => config['call_administrator']
       else
         redirect_to(config['ldap_new_password'])
       end

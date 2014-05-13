@@ -18,7 +18,7 @@ module Patria::Person
   end
 
   def ldap_user?
-    !(Devise::LDAP::Adapter.get_ldap_param(self.nickname,"uid") == nil)
+    Devise::LDAP::Adapter.get_ldap_param(self.nickname,"uid") != nil
   end
 
 end

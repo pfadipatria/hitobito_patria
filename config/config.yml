@@ -11,4 +11,5 @@ use_text: true
 call_administrator: "Bitte wende Dich an einen Systemadministrator um dein Passwort zurück zu setzen."
 no_hitobito_user: "E-Mail wurde noch nicht im Hitobito eingetragen, falls Sie einen Account im LDAP-Server besitzen, melden Sie sich mit diesem auf der Startseite an."
 no_ldap_user: "E-Mail nicht im LDAP-Server vorhanden."
-no_ldap_connection: "Es besteht momentan keine Verbindung zum LDAP-Server. Daher ist kein Einloggen möglich."
+no_ldap_connection: "Es besteht momentan keine Verbindung zum LDAP-Server. Daher ist das Einloggen nicht möglich. Bitte kontaktieren Sie den Administrator"
+no_ldap_no_password_change: "Es besteht momentan keine Verbindung zum LDAP-Server. Daher ist auch das Ändern des Passwortes nicht möglich."
