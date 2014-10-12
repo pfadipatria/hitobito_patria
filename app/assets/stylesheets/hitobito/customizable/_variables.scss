@@ -49,6 +49,11 @@ $shadowColor:           darken($pageBackground, 25%);
 $linkColor:             $redDark !default;
 $linkColorHover:        $redDarker !default;
 
+$footerColor:           $white;
+$footerColorHover:      $white;
+
+$tableColorHover:       lighten($purple, 50%);
+
 // Typography
 // -------------------------
 $sansFontFamily:        Helvetica, Arial, sans-serif !default;
