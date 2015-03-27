@@ -23,7 +23,7 @@ authorizations: &AUTHORIZATIONS
 development:
   host: ldap06.pfadipatria.com
   port: 389
-  attribute: uid
+  attribute: mail
   base: dc=pfadipatria,dc=com
   admin_user: cn=admin,dc=pfadipatria,dc=com
   admin_password: txcu1cBeSPKGSaAS
