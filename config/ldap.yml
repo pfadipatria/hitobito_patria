@@ -21,23 +21,23 @@ authorizations: &AUTHORIZATIONS
 ## Environment
 
 development:
-  host: ldap06.pfadipatria.com
-  port: 389
-  attribute: mail
-  base: dc=pfadipatria,dc=com
-  admin_user: cn=admin,dc=pfadipatria,dc=com
-  admin_password: txcu1cBeSPKGSaAS
-  ssl: false
+  host: <%= ENV['RAILS_LDAP_HOST'] || 'ldap06.pfadipatria.com' %>
+  port: <%= ENV['RAILS_LDAP_PORT'] || '389' %>
+  attribute: <%= ENV['RAILS_LDAP_ATTRIBUTE'] || 'mail' %>
+  base: <%= ENV['RAILS_LDAP_BASE'] || 'dc=pfadipatria,dc=com' %>
+  admin_user: <%= ENV['RAILS_LDAP_ADMIN_USER'] || 'cn=admin,dc=pfadipatria,dc=com' %>
+  admin_password: <%= ENV['RAILS_LDAP_ADMIN_PASSWORD'] || 'txcu1cBeSPKGSaAS' %>
+  ssl: <%= ENV['RAILS_LDAP_SSL'] || false %>
   # <<: *AUTHORIZATIONS
 
 test:
-  host: localhost
-  port: 3389
-  attribute: cn
-  base: ou=people,dc=test,dc=com
-  admin_user: cn=admin,dc=test,dc=com
-  admin_password: admin_password
-  ssl: simple_tls
+  host: <%= ENV['RAILS_LDAP_HOST'] || 'localhost' %>
+  port: <%= ENV['RAILS_LDAP_PORT'] || '3389' %>
+  attribute: <%= ENV['RAILS_LDAP_ATTRIBUTE'] || 'cn' %>
+  base: <%= ENV['RAILS_LDAP_BASE'] || 'ou=people,dc=test,dc=com' %>
+  admin_user: <%= ENV['RAILS_LDAP_ADMIN_USER'] || 'cn=admin,dc=test,dc=com' %>
+  admin_password: <%= ENV['RAILS_LDAP_ADMIN_PASSWORD'] || 'admin_password' %>
+  ssl: <%= ENV['RAILS_LDAP_SSL'] || 'simple_tls' %>
   # <<: *AUTHORIZATIONS
 
 production:
