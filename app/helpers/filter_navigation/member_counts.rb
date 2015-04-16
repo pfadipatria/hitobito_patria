@@ -32,8 +32,8 @@ module FilterNavigation
     end
 
     def init_dropdown_links
-      dropdown.item(FILTER_NAMES.first, template.url_for(:year => year))
-      dropdown.item(FILTER_NAMES.second, template.url_for(:year => year, :name => FILTER_NAMES.second))
+      dropdown.add_item(FILTER_NAMES.first, template.url_for(:year => year))
+      dropdown.add_item(FILTER_NAMES.second, template.url_for(:year => year, :name => FILTER_NAMES.second))
     end
 
 
