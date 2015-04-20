@@ -3,7 +3,7 @@ module Patria::Person
 
   included do
     devise :ldap_authenticatable
-    #before_save :get_ldap_email
+    before_save :get_ldap_email
     before_save :get_ldap_first_name
     before_save :get_ldap_last_name
     before_save :get_ldap_nickname
@@ -28,6 +28,12 @@ module Patria::Person
   rescue Net::LDAP::LdapError
   end
 
+
+  def get_ldap_email
+    email = Devise::LDAP::Adapter.get_ldap_param(self.nickname, "mail")
+    self.email = email.first unless email == nil;
+    rescue Net::LDAP::LdapError
+  end
 
 
   def ldap_user?
