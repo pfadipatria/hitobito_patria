@@ -8,7 +8,7 @@ module Devise
         encrypted = false
 
         if validate(resource){ encrypted = true; resource.valid_password?(password) }
-          if Person.where("nickname = ?", params["person"]["nickname"]).first.ldap_user?
+          if Person.where("email = ?", params["person"]["email"]).first.ldap_user?
             fail(:not_found_in_database)
           else
             resource.after_database_authentication
