@@ -6,7 +6,7 @@ Devise.setup do |config|
 
   config.ldap_update_password = true
 
-  config.ldap_use_admin_to_bind = true
+  config.ldap_use_admin_to_bind = ENV['RAILS_LDAP_USE_ADMIN_TO_BIND'] || false
 
   #route to the wagons' ldap-config file
   config.ldap_config = "#{Rails.root.parent}/hitobito_patria/config/ldap.yml"
